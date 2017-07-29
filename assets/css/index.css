@@ -35,6 +35,7 @@ p{
 ul{
 	margin:0;
 	padding:0;
+	list-style: none;
 }
 label{
 	margin:0;
@@ -46,7 +47,7 @@ label{
 
 /* Page Style */
 
-body { background: rgba(0,0,0,.12) }
+body { background: yellowgreen }
 
 h1,h3,h2,h4,h5,h6{
 	font-family: 'Source Sans Pro', sans-serif;
@@ -124,8 +125,8 @@ div#home {
     overflow-y: auto!IMPORTANT;
 }
 .about,.classes,.clients,.gallery {
-		padding: 4.5em 0em!important;
-	}
+	padding: 4.5em 0em!important;
+}
 div#about {
     background: #2C82C9;
 }
@@ -261,6 +262,86 @@ ul.nav.navbar-nav.navbar-right li:nth-child(6) a {
 	border-radius: 7px 0 0 7px;
 	position: fixed;
 	right: 0;
+	height: 465px;
+}
+#ranking{
+	width: 100%;
+	max-height: 360px;
+	overflow: hidden;
+}
+#ranking ul li:last-child{
+	border-right:none!important;
+}
+#ranking ul,#ranking li{
+	border-right: 1px solid rgba(0,0,0,.12);
+    height: 35px;
+    line-height: 27px;
+}
+#ranking ul li{
+	float: left;
+	width: 33.3%;
+	text-align: center;
+	transition: 1s;
+	transform: background-color;
+	font-family: 'Chewy', cursive;
+	color: rgba(0,0,0,.5);
+}
+#ranking li:hover{
+	background-color: rgba(255,255,255,.5);
+	cursor: pointer;
+}
+.rankingContent{
+	height: 265px;
+}
+.rContentRow{
+	width: 100%;;
+}
+.rContentLeft{
+	float: left;width: 76%;height: 46px;overflow: hidden;
+	padding:2px 9px;
+	border-bottom: 1px dashed grey;
+}
+.rContentRight{
+	float: left;width: 24%;line-height: 46px;
+	text-align: center;
+}
+#selectTopic{
+	border-radius: 0px 0px;
+	background: rgba(255,255,255,.3);
+}
+#rankingMonth,#rankingYear{
+	display: none;
+}
+#inputSearch{
+	width: 75%;
+	border-radius: 0 3px 3px 0;
+	background: rgba(255,255,255,.3);
+	margin:20px 0;
+	z-index: 3000;
+	position: relative;
+}
+#spanSearch{
+	position:absolute;
+	left: 67%;
+    bottom: 22px;
+	z-index: 3000;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#spanSearch img{
+	width: 15px;
+}
+#fbLogin{
+	position: absolute;
+    bottom: 21px;
+    right: 19%;
+    transition: 1s;
+}
+#fbLogin:hover{
+	background:cadetblue;
+}
+#fbLogin img{
+	width: 26px;
 }
 /*End rightContent*/
 @media (max-width: 768px) {
