@@ -15,4 +15,8 @@ $(document).ready(function(){
 		$('#rankingMonth').fadeOut();
 		$('#rankingYear').fadeIn();
 	});
+	// ControllerNavSearchToggle
+	$(".controllerNavSearch").click(function(){
+		$(".searchToggle").toggle('swing');
+	});
 });

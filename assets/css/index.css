@@ -47,7 +47,11 @@ label{
 
 /* Page Style */
 
-body { background: yellowgreen }
+body { background: #5D4157;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #A8CABA, #5D4157);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #A8CABA, #5D4157); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*change background here*/
 
 h1,h3,h2,h4,h5,h6{
 	font-family: 'Source Sans Pro', sans-serif;
@@ -203,6 +207,20 @@ ul.nav.navbar-nav.navbar-right li:nth-child(6) a {
     padding: 0!important;
 }
 /*--//header--*/
+/*controllerNav*/
+#controllerNav{
+	background: rgba(0,0,0,.15);
+    min-height: 30px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 0 0 7px 7px;
+    font-size: 14px;
+    line-height: 30px;
+    padding:15px 10px;
+    transition: 1s;
+    display:none;
+}
+/*endControllerNav*/
 /*Jumbotron*/
 .row-jumbotron{
 	background-size: cover;
@@ -305,14 +323,14 @@ ul.nav.navbar-nav.navbar-right li:nth-child(6) a {
 	float: left;width: 24%;line-height: 46px;
 	text-align: center;
 }
-#selectTopic{
+.selectTopic{
 	border-radius: 0px 0px;
 	background: rgba(255,255,255,.3);
 }
-#rankingMonth,#rankingYear{
+.rankingMonth,#rankingYear{
 	display: none;
 }
-#inputSearch{
+.inputSearch{
 	width: 75%;
 	border-radius: 0 3px 3px 0;
 	background: rgba(255,255,255,.3);
@@ -320,27 +338,27 @@ ul.nav.navbar-nav.navbar-right li:nth-child(6) a {
 	z-index: 3000;
 	position: relative;
 }
-#spanSearch{
+.spanSearch{
 	position:absolute;
 	left: 67%;
-    bottom: 22px;
+    bottom: 24px;
 	z-index: 3000;
 	cursor: pointer;
 	border-radius: 5px;
 }
-#spanSearch img{
+.spanSearch img{
 	width: 15px;
 }
-#fbLogin{
+.fbLogin{
 	position: absolute;
     bottom: 21px;
     right: 19%;
     transition: 1s;
 }
-#fbLogin:hover{
+.fbLogin:hover{
 	background:cadetblue;
 }
-#fbLogin img{
+.fbLogin img{
 	width: 26px;
 }
 /*End rightContent*/
@@ -354,6 +372,44 @@ ul.nav.navbar-nav.navbar-right li:nth-child(6) a {
 	.title{
 		font-size: 24px;
     	max-width: 100%;
+	}
+	/*ControllerNav*/
+	#controllerNav{
+		display: block;
+	}
+	.controllerNavTop{
+		position: relative;
+	}
+	.selectTopic{
+		width: 70%;
+		float: left;
+	}
+	.inputSearch{
+		width: 90%;
+		margin:20px 0 0 0;
+	}
+	.searchToggle{
+		display: none;
+	}
+	.controllerNavSearch{
+		float: left;
+		cursor: pointer;
+		border-radius: 5px;
+		margin-left:5%;
+	}
+	.controllerNavSearch img{
+		width: 22px;
+	}
+	.controllerNavFbLogin{
+		float:left;
+		transition: 1s;
+		margin-left:5%;
+	}
+	.controllerNavFbLogin img{
+		width: 28px;
+	}
+	.controllerNavFbLogin:hover{
+		background:cadetblue;
 	}
 }
 @media (max-width: 1000px) {
