@@ -221,39 +221,3 @@ ul.nav.navbar-nav.navbar-right li:nth-child(6) a {
   right: 0;
   height: 465px;
 }
-/*leftContent*/
-#leftContent{
-  margin-top:35px;
-}
-/*topLeftContent*/
-.topLeftContent{
-  color: rgba(255,255,255,0.8);
-}
-#author{
-  margin: 14px 0;
-}
-#description{
-  font-weight: bold;
-  background: rgba(155,155,155,.5);
-  padding: 1%;
-}
-/*middleLeftContent*/
-.middleLeftContent{
-  background:rgba(255,255,255,.2);
-  padding: 3% 2%;
-}
-.middleLeftContent img{
-  width: 100%;
-  margin: 10px 0;
-  border-radius: 11px;
-}
-.middleLeftContent a{
-  text-decoration: underline;
-}
-/*bottomLeftContent*/
-.bottomLeftContent{
-  color: white;
-  background: rgba(0,0,0,.5);
-  padding: 10px 15px;
-  margin: 20px 0;
-}
