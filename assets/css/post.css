@@ -1,3 +1,8 @@
+/*modal*/
+.modal-content{
+  border-radius: 0px 0px;
+}
+/*endModal*/
 /*leftContent*/
 #leftContent{
   margin-top:35px;
@@ -79,9 +84,59 @@
 .socialMediaControl:hover:after{
   width: 100%;
 }
+#commentSocialMediaControl{
+  text-align: center;
+  color:white;
+  text-decoration: none;
+  position: relative;
+  min-height: 27px;
+  cursor: pointer;
+}
+#commentSocialMediaControl:after {
+  content: '';
+  position: absolute;
+  height: 33px;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border: 1px dashed white;
+  transition: 1s ease;
+}
+#commentSocialMediaControl:hover:after{
+  width: 100%;
+}
 
-@media (max-width: 768px) {
-  
+.search{
+  margin-top:1rem;
+}
+.search input[type='text']{
+  width: 100%;
+  border-radius: 0 3px 3px 0;
+  background: rgba(255,255,255,.3);
+}
+
+.login{
+  margin-top: 14px;
+}
+.login img{
+  transition:1s ease;
+  border-radius: 5px;
+}
+.login img:hover{
+  background:cadetblue;
+}
+@media (max-width: 768px){
+  .socialMediaControl:first-child{
+    margin-left:16.3333%;
+  }
+}
+@media (max-width: 990px) {
+  #rightContent{
+    width: 100%!important;
+    position: inherit;
+    height: auto;
+    padding-bottom: 20px;
+  }
 }
 @media (max-width: 1000px) {
   
