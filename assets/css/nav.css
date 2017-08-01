@@ -208,6 +208,10 @@ ul.nav.navbar-nav.navbar-right li:nth-child(6) a {
     padding: 0!important;
 }
 /*--//header--*/
+/*leftContent*/
+#leftContent{
+  margin-top:35px;
+}
 /*rightContent*/
 #middleContent{
   width: 4.33333%!important;

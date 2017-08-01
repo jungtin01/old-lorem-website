@@ -1,0 +1,96 @@
+/*leftContent*/
+#leftContent{
+	color:white;
+}
+.confessionContainer{
+	background: rgba(0,0,0,.5);
+	padding: 17px 40px 10px 40px;
+	margin-bottom: 17px;
+}
+/*confessionContent*/
+.confId{
+	margin-left:15px;
+}
+.confessionContent{
+	margin: 20px 0;
+}
+.confessionContent p{
+	margin: 5px 0;
+}
+/*socialMediaControl*/
+.socialMediaControl{
+  text-align: center;
+  color:white;
+  text-decoration: none;
+  position: relative;
+  min-height: 27px;
+  cursor: pointer;
+}
+.socialMediaControl:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 1px solid white;
+  transition: 0.4s;
+}
+.socialMediaControl:first-child{
+  margin-left:12.3333%;
+}
+.socialMediaControl:last-child{
+  border-right: none;
+}
+.socialMediaControl:hover:after{
+  width: 100%;
+}
+
+/*confessionSort*/
+.confessionSort{
+	line-height: 34px;
+    height: 34px;
+    padding: 0px 12px;
+    margin-top: 22px;
+}
+.confessionSort span{
+	float:left;
+	font-family: 'Chewy', cursive;
+    color: rgba(0,0,0,.5);
+    font-size: 17px;
+}
+.day,.month,.year{
+	float:left;
+	width: 26%;
+	border-radius: 0px 0px 0px 0px;
+	background: rgba(255,255,255,.5);
+    margin: 0px 4px;
+}
+
+/*confessionSearch*/
+.search{
+	width: 80%;
+	border-radius: 0px 0px 0px 0px;
+	margin: 0 10%;
+    background: rgba(0,0,0,.5);
+    color: white;
+}
+
+@media (max-width: 768px){
+	.confessionContainer{
+		padding: 17px 20px 10px 20px;
+	}
+}
+@media (max-width: 990px) {
+	.socialMediaControl:first-child{
+	  margin-left:0;
+	}
+}
+@media (max-width: 1000px) {
+  
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+
+  
+}
+
