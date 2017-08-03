@@ -1,0 +1,109 @@
+.formCreate{
+	border-radius: 0px 0px 0px 0px;
+  	background: rgba(0,0,0,.5);
+  	color: white;
+}
+.form-inline .form-control {
+    width: 80%;
+}
+label{
+	color:rgba(255,255,255,.5);
+}
+input[name='txtTitle']{
+	margin-left: 80px;
+}
+textarea[name='txtDescription']{
+	margin-left: 31px;
+}
+textarea[name='txtContent']{
+	margin-left: 54px;
+}
+textarea[name='txtConfession']{
+	margin-left: 30px;
+}
+
+.change{
+	margin-top: 20px;
+}
+.changing,.acting{
+  text-align: center;
+  color:white;
+  text-decoration: none;
+  position: relative;
+  min-height: 27px;
+  cursor: pointer;
+}
+.changing:first-child{
+	border-right: 1px solid grey
+}
+.changing:after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 1px solid white;
+  transition: 0.4s;
+}
+.changing:hover:after{
+  width: 100%;
+}
+.acting{
+	height: 40px;
+	line-height: 39px;
+	transition: .5s ease;
+	border:1px solid white;
+}
+.acting:hover{
+	background:rgba(0,0,0,.15);
+}
+.acting:first-child{
+	border-radius: 10px 0 0 10px;
+}
+.acting:last-child{
+	border-radius: 0 10px 10px 0;
+}
+.confActing{border-radius: 10px!important;}
+.controlChange{
+	display: none;
+}
+.controlChange:first-child{
+	margin-top:45px;
+}
+@media (max-width: 768px){
+  .socialMediaControl:first-child{
+    margin-left:16.3333%;
+  }
+}
+/*responsive*/
+@media (max-width: 768px){
+  input[name='txtTitle'],textarea[name='txtDescription'],textarea[name='txtContent'],textarea[name='txtConfession']{
+  	margin-left: 0px;
+  }
+  .form-inline .form-control {
+		width: 100%;
+  }
+}
+@media (max-width: 990px) {
+  .change{
+  	display: none;
+  }
+  #rightContent{
+    width: 100%!important;
+    position: inherit;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .controlChange{
+		display: block;
+	}
+}
+@media (max-width: 1000px) {
+  
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+
+  
+}
+

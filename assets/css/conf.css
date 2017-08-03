@@ -18,7 +18,7 @@
 	margin: 5px 0;
 }
 /*socialMediaControl*/
-.socialMediaControl{
+.socialMediaControl,.confessionWeek,.confessionCreate{
   text-align: center;
   color:white;
   text-decoration: none;
@@ -26,7 +26,7 @@
   min-height: 27px;
   cursor: pointer;
 }
-.socialMediaControl:after {
+.socialMediaControl:after,.confessionWeek:after{
   content: '';
   position: absolute;
   bottom: 0;
@@ -35,13 +35,24 @@
   border-bottom: 1px solid white;
   transition: 0.4s;
 }
+.confessionCreate:after{
+  content: '';
+  position: absolute;
+  height: 33px;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border: 1px dashed white;
+  transition: 1s ease;
+  background: rgba(0,0,0,.15);
+}
 .socialMediaControl:first-child{
   margin-left:12.3333%;
 }
 .socialMediaControl:last-child{
   border-right: none;
 }
-.socialMediaControl:hover:after{
+.socialMediaControl:hover:after,.confessionWeek:hover:after,.confessionCreate:hover:after{
   width: 100%;
 }
 
@@ -67,14 +78,34 @@
 }
 
 /*confessionSearch*/
+.confessionSearch{
+  position: relative;
+}
+.hash{
+  position: absolute;
+  top: 7px;
+  left: 50px;
+  font-weight: bold;
+  color:white;
+}
 .search{
 	width: 80%;
 	border-radius: 0px 0px 0px 0px;
 	margin: 0 10%;
-    background: rgba(0,0,0,.5);
-    color: white;
+  background: rgba(0,0,0,.5);
+  color: white;
+  padding-left:29px;
 }
 
+/*confessionWeek*/
+.confessionWeek,.confessionCreate{
+  text-align:center;
+}
+/*confessionTopControl*/
+#confessionTopControl{
+  display: none;
+}
+.confessionCreate a,.confessionWeek a{color:white;}
 @media (max-width: 768px){
 	.confessionContainer{
 		padding: 17px 20px 10px 20px;
@@ -84,6 +115,33 @@
 	.socialMediaControl:first-child{
 	  margin-left:0;
 	}
+  #rightContent{
+    display: none;
+  }
+  #confessionTopControl{
+    display: block;
+  }
+  .day,.month,.year{
+    width: 35%;
+  }
+  .hash{
+    left:12.3333%;
+  }
+  .searchIcon{
+    text-align: center;
+    padding-top: 9px;
+    margin: 0px 3%;
+    cursor: pointer;
+  }
+  .searchIcon img{
+    width:16px;
+  }
+ .confessionCreate:after{
+    height: 40px;
+  }
+  .confessionSearch{
+    display: none;
+  }
 }
 @media (max-width: 1000px) {
   

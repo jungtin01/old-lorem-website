@@ -98,6 +98,7 @@
   width: 0%;
   border: 1px dashed white;
   transition: 1s ease;
+  background: rgba(0,0,0,.15);
 }
 #commentSocialMediaControl:hover:after{
   width: 100%;
